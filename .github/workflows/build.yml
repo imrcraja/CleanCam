@@ -16,11 +16,13 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - name: Set up Gradle
+      - name: Set up Gradle 8.12
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.12'
       - name: Build mod
         run: gradle --no-daemon build
-      - name: Upload mod JAR
+      - name: Upload remapped mod JAR
         uses: actions/upload-artifact@v4
         with:
           name: CleanCam-Minecraft-1.20.1-alpha
