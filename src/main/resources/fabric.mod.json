@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "cleancam",
+  "version": "${version}",
+  "name": "CleanCam",
+  "description": "Mobile-first capture tools and in-game tutorial for Minecraft Java 1.20.1.",
+  "authors": ["RC Empire"],
+  "contact": {"homepage": "https://github.com/imrcraja/CleanCam", "sources": "https://github.com/imrcraja/CleanCam/issues"},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {"client": ["com.rcempire.cleancam.CleanCamClient"]},
+  "depends": {"fabricloader": ">=0.14.21", "minecraft": "~1.20.1", "java": ">=17", "fabric-api": "*"}
+}
